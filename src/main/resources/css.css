@@ -1,0 +1,36 @@
+.button {
+    -fx-background-color: #1976d2; /* 鼠标移出 */
+    -fx-text-fill: #ffffff;
+}
+
+/* I want MouseMoved button background-color effect 鼠标移入 */
+.button:hover {
+    -fx-background-color: #63a4ff;
+}
+
+.button:pressed {
+    -fx-background-color: #004ba0; /* maybe some other color */
+}
+
+Text {
+    -fx-fill: #63a4ff;
+    -fx-font-size: 10pt;
+}
+
+.jfx-check-box {
+    -jfx-checked-color: #1976d2;
+    -jfx-unchecked-color: #63a4ff;
+}
+
+.jfx-slider > .thumb {
+    -fx-background-color: #1976d2;
+}
+
+.jfx-slider > .colored-track {
+    -fx-background-color: #63a4ff;
+}
+
+.jfx-slider > .animated-thumb {
+    -fx-background-color: #1976d2;
+}
+

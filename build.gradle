@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.11'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public'}
+    mavenCentral()
+}
+
+javafx {
+    version = "17.0.2"
+    modules("javafx.controls")
+}
+
+dependencies {
+    implementation 'com.jfoenix:jfoenix:8.0.10'
+    implementation 'com.twelvemonkeys.imageio:imageio-tga:3.8.1'
+    implementation 'com.jfoenix:jfoenix:9.0.10'
+    implementation group: 'org.bytedeco', name: 'javacv-platform', version: '1.5.7'
+}
